@@ -1,0 +1,138 @@
+:root {
+    --background-col: #ffffff;
+    --example-col:rgb(75, 75, 75)C;
+    color: black;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0px 0px 0px 0px;
+    background-color: var(--background-col);
+    display: flex;
+}
+
+#navbar {
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    border-right: solid 3px rgb(145, 145, 145);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h1 {
+    margin: 15px auto 15px auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+#nav-list {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: block;
+}
+
+#nav-list > li {
+    display: flex;
+    align-items: center;
+    border-top: solid 1px rgb(0, 0, 0);
+    height: 40px;
+}
+
+a.nav-link {
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(---example-col);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+main {
+    margin: 30px 30px 30px 380px;
+}
+
+section {
+    margin: 10px auto 10px auto;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+p {
+    margin: 10px auto 10px auto;
+    font-size: 0.8rem;
+}
+
+li {
+    margin: 10px auto 10px auto;
+    font-size: 0.8rem;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+code:first-line {
+    line-height: 0px;
+}
+
+#nested-list {
+    list-style-type: none; 
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        position: relative;
+        height: 300px;
+        border-right: 0px;
+    }
+
+    #nav-list {
+        border-top: solid 3px rgb(145, 145, 145);
+        border-bottom: solid 3px rgb(145, 145, 145);
+        overflow: auto;
+    }
+
+    #nav-list > li {
+        border-bottom: solid 1px rgb(0, 0, 0);
+        border-top: 0px;
+        height: 31px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #nav-list > li:last-child {
+        border-bottom: 0px;
+    }
+
+    main {
+        margin: 10px 10px 30px 10px;
+    }
+    
+}
